@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Uneweb-blue)
 
-# Project Name
+# Rock, Paper, Scissors
 
-> One paragraph statement about the project.
+> An Rock Paper Scissor game project made in JavaScript
 
 ![screenshot](./app_screenshot.png)
 
@@ -10,13 +10,11 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- JavaScript
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://danielfinx.github.io/odin_rock-paper-scissors/)
 
 
 ## Getting Started
@@ -46,20 +44,14 @@ To get a local copy up and running follow these simple example steps.
 👤 **Daniel Enrique Santander Finol**
 
 - GitHub: [@Danielfinx](https://github.com/Danielfinx)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/daniel-santander-ab260b228)
 - Twitter: [@Daniel](#)
-- LinkedIn: [LinkedIn](#)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/Danielfinx/odin_rock-paper-scissors/issues).
 
 ## Show your support
 

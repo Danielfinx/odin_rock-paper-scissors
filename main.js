@@ -1,3 +1,5 @@
+let button = document.querySelector('button');
+
 function getComputerChoice() {
     let num= Math.floor(Math.random()*3);
     switch (num) {
@@ -54,4 +56,4 @@ function game () {
     }
 }
 
-game();
+button.addEventListener("click", game);

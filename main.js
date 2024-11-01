@@ -1,22 +1,20 @@
-let button = document.querySelector('button');
+let buttons = document.querySelectorAll('button');
 
 function getComputerChoice() {
     let num= Math.floor(Math.random()*3);
     switch (num) {
         case 0:
-            return 'Rock';
+            return 'ROCK';
         case 1:
-            return 'Paper';
+            return 'PAPER';
         case 2:
-            return 'Scissors';
+            return 'SCISSORS';
         default:
             return 'Error!';
     }
 }
 
 function playRound(playerChoise, computerChoise) {
-    playerChoise = playerChoise.toUpperCase();
-    computerChoise = computerChoise.toUpperCase();
     if (playerChoise === computerChoise) {
         return 'Draw!'
     } else {
@@ -48,12 +46,23 @@ function playRound(playerChoise, computerChoise) {
     }
 }
 
-function game () {
-    for (let i= 1; i <= 5; i++) {
-        let playerChoise = prompt('Player Selection: ');
-        let computerChoise = getComputerChoice();
-        console.log(playRound(playerChoise, computerChoise));
-    }
-}
-
-button.addEventListener("click", game);
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const computer = getComputerChoice();
+        const result = document.querySelector('#resultText');
+        switch (btn.id) {
+            case 'rockBtn':
+                result.textContent = playRound('ROCK', computer);
+                break;
+            case 'paperBtn':
+                result.textContent = playRound('PAPER', computer);
+                break;
+            case 'scissorsBtn':
+                result.textContent = playRound('SCISSORS', computer);
+                break;
+            default:
+                result.textContent = 'ERROR!';
+                break;
+        }
+    });
+});
